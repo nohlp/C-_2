@@ -10,6 +10,11 @@ namespace Lesson1_Task1
     {
         static void Main(string[] args)
         {
+            int a = 1;
+            int b = 4;
+            Console.Write($"a+b={a+b}");
+
+            Console.ReadKey();
         }
     }
 }
