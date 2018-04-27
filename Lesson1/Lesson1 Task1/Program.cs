@@ -1,20 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
+//Азаров Андрей
+/*
 
-namespace Lesson1_Task1
+ */
+
+namespace Lesson1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int a = 1;
-            int b = 4;
-            Console.Write($"a+b={a+b}");
+            Form form = new Form();
+            form.Width = 800;
+            form.Height = 600;
 
-            Console.ReadKey();
+            Game.Init(form);
+
+            form.Show();
+            Game.Draw();
+            Application.Run(form);
         }
     }
 }
